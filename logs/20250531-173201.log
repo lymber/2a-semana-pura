@@ -1,0 +1,16 @@
+INFO    : Since no target was supplied, we will use "slides".
+
+INFO    : Now preparing local server to preview your project directory `/home/lymber/tmp/2a-semana-pura`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : setting up ...
+INFO    : values set...
+INFO    : adding server entry
+INFO    : Added server entry a2bae0894e 29249 8128 localhost
+
+INFO    : Starting the server
+INFO    : Server will soon be available at http://localhost:8128
+INFO    : Opening browser for target `slides` at http://localhost:8128/output/slides
