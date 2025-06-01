@@ -19,7 +19,7 @@
 	<p>Sejam <m>n\geq 2</m> e <m>\mathbf{x}=(x_1,\ldots,x_m),
 	\mathbf{y}=(y_1,\ldots,y_n)\in\R^n</m>. Definimos a forma bilinear
 	<m>\langle\cdot,\cdot\rangle_1\colon\R^n\times\R^n\to\R</m> por
-	<me>\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+x_{n-1}y_{n-1}-x_ny_n.</me></p>
+	<me>\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+\cdots+x_{n-1}y_{n-1}-x_ny_n.</me></p>
       </statement>
     </definition>
 
