@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="esp_lor">
+  
+  <title>O espaço de Lorentz-Minkowski</title>    
+
+  <slide>
+    <title>Primeiras definições</title>
+
+    <p>Vamos trabalhar no espaço vetorial <m>\R^n</m>, equipado com uma
+    forma bilinear distinta do produto interno usual:</p>
+  </slide>
+  <slide>
+    <title>Primeiras definições</title>
+    <p>Vamos trabalhar no espaço vetorial <m>\R^n</m>, equipado com uma
+    forma bilinear distinta do produto interno usual:</p>
+    <definition xml:id="def_formbil" >
+      <statement>
+	<p>Sejam <m>n\geq 2</m> e <m>\mathbf{x}=(x_1,\ldots,x_m),
+	\mathbf{y}=(y_1,\ldots,y_n)\in\R^n</m>. Definimos a forma bilinear
+	<m>\langle\cdot,\cdot\rangle_1\colon\R^n\times\R^n\to\R</m> por
+	<me>\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+x_{n-1}y_{n-1}-x_ny_n.</me></p>
+      </statement>
+    </definition>
+
+    <p pause="yes">Muito parecida com o produto interno usual!</p>
+
+    <p pause="yes">O que não muda: é bilinear; é simétrica; é
+    não-degenerada.</p> 
+
+    <p pause="yes">O que muda? Deixa de ser <term>positiva
+    definida</term>.</p>
+  </slide>
+  <slide>
+    <title>Primeiras definições</title>
+    <definition xml:id="def_esplor" >
+      <statement>
+	<p>O espaço de Lorentz-Minkowski é o espaço vetorial <m>\R^n</m>
+	mundo da forma bilinear acima. Notação:
+	<m>\L^n=\R^n_1=\Big(\R^n,\langle\cdot,\cdot\rangle_1\Big)</m>.</p>
+      </statement>
+    </definition>
+
+    <p pause="yes">Essa forma bilinear separa os vetores em três tipos:
+    <ul pause="yes">
+      <li><m>\mathbf{v}</m> é de tipo espaço se
+      <m>\langle\mathbf{v},\mathbf{v}\rangle_1 &gt; 0</m>, ou
+      <m>\mathbf{v}=\mathbf{0}</m>;</li>
+      <li><m>\mathbf{v}</m> é de tipo tempo se
+      <m>\langle\mathbf{v},\mathbf{v}\rangle_1 &lt; 0</m>;</li>
+      <li><m>\mathbf{v}</m> é de tipo luz se
+      <m>\langle\mathbf{v},\mathbf{v}\rangle_1 =0</m>, mas
+      <m>\mathbf{v}\neq\mathbf{0}</m>;</li>
+    </ul>
+    </p>
+
+    <p pause="yes"> O conjunto dos <m>\mathbf{v}\in\L^n</m> tais que
+    <m>\langle\mathbf{v},\mathbf{v}\rangle_1=c</m>, <m>c\in\R</m> é:
+    <ul pause="yes">
+      <li>um cone se <m>c=0</m> (chamado <term>cone de luz</term>);</li>
+      <li>um hiperboloide de uma folha, se <m>c&gt;0</m>;</li>
+      <li>um hiperboloide de duas folhas, se  <m>c&lt;0</m>;</li>
+    </ul></p>
+  </slide>
+</section>

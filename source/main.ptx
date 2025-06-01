@@ -29,6 +29,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
       \newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
       \newcommand{\N}{\mathbb{N}}
       \newcommand{\R}{\mathbb{R}}
+      \renewcommand{\L}{\mathbb{L}}
       \newcommand{\C}{\mathbb{C}}
       \newcommand{\nv}{\mathbf{0}}
       \DeclareMathOperator{\tr}{tr}
@@ -64,8 +65,8 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
       <!-- </abstract> -->
 
     </frontmatter>
-    <!-- <xi:include href="./00-disc_info.ptx" /> -->
-    <!-- <xi:include href="./01-complexos_edo.ptx" /> -->
+    <xi:include href="./00-plano.ptx" />
+    <xi:include href="./01-esp_lor.ptx" />
     <!-- <xi:include href="./02-curvas.ptx" /> -->
     <!-- <xi:include href="./03-sup_quadricas.ptx" /> -->
     <!-- <xi:include href="./04-func_vv.ptx" /> -->

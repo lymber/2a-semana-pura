@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="plano_trab">
+  
+  <title>Plano de Trabalho:</title>    
+
+  <slide>
+    <title>Três dias de minicurso</title>
+    <ol pause="yes">
+      <li>Dia 1: Ambientação (conhecendo o espaço de Lorentz-Minkowski,
+      <m>\L^n</m>) e motivações físicas;</li>
+      <li>Dia 2: Curvas em <m>\L^3</m>;</li>
+      <li>Dia 3: Superfícies em <m>\L^3</m> e algo mais... (supresa!)</li>
+    </ol>
+  </slide>
+</section>
