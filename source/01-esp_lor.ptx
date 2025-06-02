@@ -5,13 +5,13 @@
   <title>O espaço de Lorentz-Minkowski</title>    
 
   <slide>
-    <title>Primeiras definições</title>
+    <title>Primeiras definições e resultados</title>
 
     <p>Vamos trabalhar no espaço vetorial <m>\R^n</m>, equipado com uma
     forma bilinear distinta do produto interno usual:</p>
   </slide>
   <slide>
-    <title>Primeiras definições</title>
+    <title>Primeiras definições e resultados</title>
     <p>Vamos trabalhar no espaço vetorial <m>\R^n</m>, equipado com uma
     forma bilinear distinta do produto interno usual:</p>
     <definition xml:id="def_formbil" >
@@ -32,7 +32,7 @@
     definida</term>.</p>
   </slide>
   <slide>
-    <title>Primeiras definições</title>
+    <title>Primeiras definições e resultados</title>
     <definition xml:id="def_esplor" >
       <statement>
 	<p>O espaço de Lorentz-Minkowski é o espaço vetorial <m>\R^n</m>
@@ -61,5 +61,286 @@
       <li>um hiperboloide de uma folha, se <m>c&gt;0</m>;</li>
       <li>um hiperboloide de duas folhas, se  <m>c&lt;0</m>;</li>
     </ul></p>
+  </slide>
+
+  <slide>
+    <title>Primeiras definições e resultados</title>
+    <p>O conceito de subespaço vetorial não depende da forma
+    bilinear.</p>
+    <p pause="yes">
+      O conceito de ortogonalidade é definido através da forma bilinear
+      <m>B=\langle\cdot,\cdot\rangle</m>, como sempre.</p>
+    <p pause="yes">Tipo causal de subespaços:
+    <ul pause="yes">
+      <li><m>U</m> é de tipo espaço se <m>B|_U</m> é
+      postiva-definida ou indefinida e não-degenerada;</li>
+      <li><m>U</m> é de tipo tempo se <m>B|_U</m> é
+      negativa-definida;</li>
+      <li><m>U</m> é de tipo luz se <m>B|_U</m> é degenerada.</li>
+    </ul></p>
+    <p pause="yes">O tipo causal de uma reta é o tipo causal de qualquer
+    vetor diretor.</p>
+    <p pause="yes">O tipo causal de um plano <m>\pi:ax+by+cz=d</m> em <m>\L^3</m>
+    de equação é dado pelo tipo causal do seu vetor (euclidianamente)
+    normal <m>\mathbf{n}=(a,b,c)</m>:
+    <ul pause="yes">
+      <li><m>\pi</m> é de tipo espaço se e somente se <m>\mathbf{n}</m>
+      é de tipo tempo;</li> 
+      <li><m>\pi</m> é de tipo tempo se e somente se <m>\mathbf{n}</m>
+      é de tipo tempo;</li>
+      <li><m>\pi</m> é de tipo luz se e somente se <m>\mathbf{n}</m>
+      é de tipo luz.</li>
+      </ul></p>
+  </slide>
+  <slide>
+    <title>Primeiras definições e reultados</title>
+    <p>Em dimensão mais alta e codimensão qualquer, temos um
+    critério.</p>
+    <p pause="yes">Se <m>C=(\mathbf{u_1},\ldots,\mathbf{u_m})</m> é uma
+    base do subespaço <m>U</m>, construímos a matriz de Gram de <m>U</m>
+    em relação a <m>C</m>, <m>G=(a_{ij})\in M_m(\R)</m>, onde <m>a_{ij}=B(\mathbf{u}_i,\mathbf{u}_j)</m>.</p>
+    <p pause="yes"><m>G</m> é exatamente a matriz de <m>B|U</m> na base
+    <m>C</m> e portanto define o caráter de <m>B|U</m>, através do
+    critério de Sylvester:</p>
+  </slide>
+  <slide>
+    <title>Primeiras definições e reultados</title>
+    <p>Em dimensão mais alta e codimensão qualquer, temos um
+    critério.</p>
+    <p>Se <m>C=(\mathbf{u_1},\ldots,\mathbf{u_m})</m> é uma
+    base do subespaço <m>S</m>, construímos a matriz de Gram de <m>S</m>
+    em relação a <m>C</m>, <m>G=(a_{ij})\in M_m(\R)</m>.</p>
+    <p><m>G</m> é exatamente a matriz de <m>B|_S</m> na base
+    <m>C</m> e portanto define o caráter de <m>B|_S</m>, através do
+    critério de Sylvester:</p>
+    <theorem xml:id="teo-sylvester">
+      <statement>
+	<p>Seja <m>A\in M_m(\R)</m> simétrica e <m>\Delta_k</m> o menor
+	principal de ordem <m>k</m> de <m>A</m>. Então:
+	<ol>
+	  <li><m>A</m> é positiva definida se e somente se <m>\Delta_k
+	  &gt;0</m> para todo <m>0\leq k\leq m</m>;</li>
+	  <li><m>A</m> é negativa definida se e somente se <m>(-1)^k\Delta_k
+	  &gt;0</m> para todo <m>0\leq k\leq m</m>;</li>
+	  <li><p><m>A</m> é indefinida se e somente
+	  <ul>
+	    <li> existe <m>k</m> par tal que <m>\Delta_k&lt;0</m>,
+	    ou</li>
+	    <li>Existem <m>k,l</m> ímpares distintos tais que
+	    <m>\Delta_k&gt;0</m> e <m>\Delta_k&lt;0</m>.</li>
+	  </ul></p></li>
+	</ol></p>
+      </statement>
+    </theorem>
+  </slide>
+
+  <slide>
+    <title>Alguns resultados interessantes em <m>\L^n</m>:</title>
+    <p><m>\dim U+\dim U^\perp=n</m> e <m>U=(U^\perp)^\perp</m>;</p>
+    <p pause="yes"><m>\L^n=U\oplus U^\perp</m> se e somente se <m>U</m>
+    é não degenerado;</p>
+    <p pause="yes"> se <m>U</m> é de tipo luz então <m>U^\perp</m>
+    é de tipo luz;</p>
+    <p pause="yes">dois vetores tipos luz são ortogonais se e somente se
+    são paralelos;</p>
+    <p pause="yes">se <m>U</m> é de tipo luz, então <m>\dim(U\cap
+    U^\perp)=1</m>;</p>
+    <p pause="yes">todo subespaço não-degenerado admite uma base
+    ortonormal (Gram-Schmidt);</p>
+    <p pause="yes">todo subespaço degenerado admite base ortogonal</p>.
+    <p pause="yes">se <m>U</m> é um hiperplano degenerado então <m>U^\perp\subseteq U</m>;</p>
+    <p pause="yes">não existe dois vetores de tipo tempo mutuamente
+    ortogonais, tampouco um vetor de tipo tempo ortogonal a um vetor de
+    tipo luz.</p>
+    <p pause="yes">toda base ortonormal de <m>\L^n</m> contém um vetor
+    de tipo tempo e <m>n-1</m> vetores de tipo espaço.</p>
+  </slide>
+
+  <slide>
+    <title>Mas para quê tudo isso?</title>
+    <p>Dados <m>p,q\in\L^4</m>, chamados eventos do espaço-tempo, o
+    vetor <m>\mathbf{v}=q-p=(\Delta x, \Delta y, \Delta z, \Delta
+    t)\in\L^4</m>, com <m>\Delta t\neq0</m>, determina a relação de
+    causalidade entre os eventos, através do seu tipo causal:
+    <me>\langle\mathbf{v},\mathbf{v}\rangle=(\Delta x)^2+(\Delta
+    y)^2+(\Delta z)^2-(\Delta t)^2=(\Delta
+    t)^2(\|\tilde{\mathbf{v}}\|_E+1)(\|\tilde{\mathbf{v}}\|_E+1),</me></p>
+    <p pause="yes">onde <m>\tilde{\mathbf{v}}=\Big(\frac{\Delta
+    x}{\Delta t}, \frac{\Delta y}{\Delta t},
+    \frac{\Delta z}{\Delta t}\Big)\in\R^3</m> e <m>\|\tilde{\mathbf{v}}\|_E</m> é sua norma
+    euclidiana usual.</p>
+    <p><ul pause="yes">
+      <li><m>\mathbf{v}</m> é de tipo tempo se, e só se,
+      <m>\|\tilde{\mathbf{v}}\|_E&lt;1</m>. Se <m>\Delta t&gt;0</m>
+      dizemos que o evento <m>p</m> pode influenciar <m>q</m> através de
+      uma onda mecânica, por exemplo.</li>
+      <li><m>\mathbf{v}</m> é de tipo luz se, e só se,
+      <m>\|\tilde{\mathbf{v}}\|_E=1</m>. Se <m>\Delta t&gt;0</m> dizemos
+      que o evento <m>p</m> pode influenciar <m>q</m> através de uma
+      onda eletromagnética, por exemplo.</li>
+      <li><m>\mathbf{v}</m> é de tipo espaço se, e só se,
+      <m>\|\tilde{\mathbf{v}}\|_E&gt;1</m>, ou seja, a velocidade para
+      se deslocar de precisa ser maior que a da luz. Nenhum fóton é
+      desloca-se rápido o suficiente para vivencia ambos os
+      eventos.</li>
+    </ul></p>
+  </slide>
+  
+  <slide>
+    <title>É, parece "útil"... Então, mais matemática!</title>
+    <definition xml:id="def_cones">
+      <statement>
+	<p>O <term>cone de luz</term> centrado em <m>p\in\L^n</m> é o
+	conjunto <me>C_L(p)=\{q\in\L^n\colon q-p\text{ é de tipo
+	luz}\}.</me></p>
+	<p>O <term>cone de tempo</term> centrado em <m>p\in\L^n</m> é o
+	conjunto <me>C_T(p)=\{q\in\L^n\colon q-p\text{ é de tipo
+	tempo}\}.</me></p>
+      </statement>
+    </definition>
+    <theorem xml:id="teo_cauchytriang">
+      <statement>
+	<p>Sejam <m>\mathbf{u},\mathbf{v}\in\L^n</m> vetores de tipo
+	tempo, então
+	<m>\big|\langle\mathbf{u},\mathbf{v}\rangle\big|\geq
+	\|\mathbf{u}\|\|\mathbf{v}\|.</m></p>
+	<p>Sejam <m>\mathbf{u},\mathbf{v}\in\L^n</m> vetores de tipo
+	tempo futuro dirigidos, então
+	<m>\|\mathbf{u}+\mathbf{v}\|\geq
+	\|\mathbf{u}\|+\|\mathbf{v}\|.</m></p>
+	<p>As igualdades valem se, e somente se, os vetores envolvidos
+	são linearmente dependentes.</p>
+      </statement>
+    </theorem>
+  </slide>
+
+  <slide>
+    <title>Uma aplicação (voltou a ficar "útil"...)</title>
+    <p>O paradoxo dos gêmeos:</p>
+    <p>Duas irmãs gêmeas, Leticia e Natalia, com 8 anos de idade,
+    despedem-se pois Natalia seguirá em uma viagem espacial a
+    <m>95\%</m> da velocidade da luz, durante 5 anos para a ida e mais 5
+    anos para a volta. No retorno Natalia tem 18 anos, mas ao encontrar
+    Leticia não entende o que se passa: ela tem cerca de 40 anos!</p>
+    <p pause="yes">Sendo <m>\mathbf{v}</m> um vetor tipo tempo
+    futuro-dirigido ligando dois eventos <m>p</m> e <m>q</m>, podemos interpretar <m>\|\mathbf{v}\|</m> como o
+    tempo próprio pelo observador que vai de <m>p</m> a <m>q</m>,
+    segundo <m>\mathbf{v}</m>. Vamos para a lousa...</p>
+  </slide>
+
+  <slide>
+    <title>Isometrias</title>
+    <p>Uma isometria em <m>\L^n</m> é uma aplicação
+    <m>F\colon\L^n\to\L^n</m> tal que <me>\big\langle
+    F(x)-F(y),F(x)-F(y)\big\rangle=\langle x-y,x-y\rangle</me>.
+    </p>
+  </slide>
+  <slide>
+    <title>Isometrias</title>
+    <p>Uma isometria em <m>\L^n</m> é uma aplicação
+    <m>F\colon\L^n\to\L^n</m> tal que <me>\big\langle
+    F(x)-F(y),F(x)-F(y)\big\rangle=\langle x-y,x-y\rangle</me>.
+    </p>
+    <p> Um transformação linear <m>\Lambda\colon
+    L^n\to\L^n</m> é <term>pseudo-ortogonal</term> se
+    <me>\langle\Lambda(x),\Lambda(y)\rangle=\langle x,y\rangle</me>.</p>
+    <p pause="yes">Exemplos de isometrias: translações e rotações
+    hiperbólicas em <m>\L^2</m>.</p>
+    <p pause="yes">Uma transformação linear <m>\Lambda\colon
+    L^n\to\L^n</m> é pseudo-ortogonal (de Lorentz) se e somente se
+    <m>[\Lambda]^T\mathrm{Id}_1[\Lambda]=\mathrm{Id}_1</m>.</p>
+    <p pause="yes">O conjunto <m>O_1(n,\R)</m> de todas as
+    transformações ortogonais, com a operação de composição, é um grupo
+    fechado também pela operação de transposição.</p>
+  </slide>
+  <slide>
+    <title>Isometrias</title>
+    <p>Uma isometria em <m>\L^n</m> é uma aplicação
+    <m>F\colon\L^n\to\L^n</m> tal que <me>\big\langle
+    F(x)-F(y),F(x)-F(y)\big\rangle=\langle x-y,x-y\rangle</me>.
+    </p>
+    <p> Um transformação linear <m>\Lambda\colon
+    L^n\to\L^n</m> é <term>pseudo-ortogonal</term> se
+    <me>\langle\Lambda(x),\Lambda(y)\rangle=\langle x,y\rangle</me>.</p>
+    <p>Exemplos de isometrias: translações e rotações
+    hiperbólicas em <m>\L^2</m>.</p>
+    <p>Uma transformação linear <m>\Lambda\colon
+    L^n\to\L^n</m> é pseudo-ortogonal se e somente se
+    <m>[\Lambda]^T\mathrm{Id}_1[\Lambda]=\mathrm{Id}_1</m>.</p>
+    <p>O conjunto <m>O_1(n,\R)</m> de todas as
+    transformações ortogonais, com a operação de composição, é um grupo
+    fechado também pela operação de transposição.</p>
+    <theorem xml:id="teo_iso">
+      <statement>
+	<p>Se <m>F\colon\L^n\to\L^n</m> é uma isometria, então existem
+	únicos <m>a\in\L^n</m> e <m>\Lambda\in O_1(n,\R)</m> tais que
+	<m>F(\mathbf{u})=\Lambda(u)+a</m>.</p>
+      </statement>
+    </theorem>
+  </slide>
+
+  <slide>
+    <title>Isometrias</title>
+    <p>Uma base ortonormal de <m>\L^n</m> é
+    <term>futuro-orientada</term> se seu vetor de tipo tempo (o último,
+    por conveniência) é futuro-dirigido. Uma transformação de Lorentz é
+    <term>ortocrônica</term> (preserva orientação do tempo) se leva
+    bases fututo-dirigidas em bases futuro dirigidas.</p>
+    <p pause="yes">O conjunto de todas as transformações ortocrônicas
+    (<m>O_1^\uparrow(n,\R)</m>) é um grupo.</p>
+    <p pause="yes"><m>\Lambda\in O_1^\uparrow(n,\R)\iff \lambda_{nn}\geq
+    1</m>.</p>
+    <p pause="yes">Podemos decompor <m>L^n=\R^{n-1}\oplus\R_-</m> e considerar as
+    restrições de <m>\Lambda</m>, <m>\Lambda_E</m> e <m>\Lambda_T</m>,
+    aos respectivos somandos. Dessa forma temos que
+    <m>\det\Lambda_E=\det\Lambda\det\Lambda_T</m> e a seguinte partico
+    de <m>O_1(n,\R)</m>:
+    <md>
+      <mrow>O_1^{+\uparrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&gt;0\text{ e }\det\Lambda_T&gt;0\}</mrow>
+      <mrow>O_1^{+\downarrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&gt;0\text{ e }\det\Lambda_T&lt;0\}</mrow>
+      <mrow>O_1^{-\uparrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&lt;0\text{ e }\det\Lambda_T&gt;0\}</mrow>
+      <mrow>O_1^{-\downarrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&lt;0\text{ e }\det\Lambda_T&lt;0\}</mrow>
+    </md>
+  </p> 
+  </slide>
+  <slide>
+    <title>Isometrias</title>
+    <p>Uma base ortonormal de <m>\L^n</m> é
+    <term>futuro-orientada</term> se seu vetor de tipo tempo (o último,
+    por conveniência) é futuro-dirigido. Uma transformação de Lorentz é
+    <term>ortocrônica</term> (preserva orientação do tempo) se leva
+    bases fututo-dirigidas em bases futuro dirigidas.</p>
+    <p>O conjunto de todas as transformações ortocrônicas
+    (<m>O_1^\uparrow(n,\R)</m>) é um grupo.</p>
+    <p><m>\Lambda\in O_1^\uparrow(n,\R)\iff \lambda_{nn}\geq
+    1</m>.</p>
+    <p>Podemos decompor <m>L^n=\R^{n-1}\oplus\R_-</m> e considerar as
+    restrições de <m>\Lambda</m>, <m>\Lambda_E</m> e <m>\Lambda_T</m>,
+    aos respectivos somandos. Dessa forma temos que
+    <m>\det\Lambda_E=\det\Lambda\det\Lambda_T</m> e a seguinte partico
+    de <m>O_1(n,\R)</m>:
+    <md>
+      <mrow>O_1^{+\uparrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&gt;0\text{ e }\det\Lambda_T&gt;0\}</mrow>
+      <mrow>O_1^{+\downarrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&gt;0\text{ e }\det\Lambda_T&lt;0\}</mrow>
+      <mrow>O_1^{-\uparrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&lt;0\text{ e }\det\Lambda_T&gt;0\}</mrow>
+      <mrow>O_1^{-\downarrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
+      \det\Lambda_E&lt;0\text{ e }\det\Lambda_T&lt;0\}</mrow>
+    </md>
+    </p>
+    <p pause="yes"><m>O_1^{+\uparrow}(n,\R)=O_1^{\uparrow}(n,\R)\cap
+    SO_1(n,\R)</m> é um subgrupo normal de <m>O_1(n,\R)</m>.</p>
+    <p pause="yes">O grupo <m>O_1(n,\R)/O_1^{+\uparrow}(n,\R)</m> tem
+    quatro elementos e não é cíclico. Quem é ele?</p>
+  </slide>
+
+  <slide>
+    <title>Produto Vetorial</title>
   </slide>
 </section>
