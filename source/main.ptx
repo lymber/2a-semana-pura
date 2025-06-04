@@ -67,15 +67,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     </frontmatter>
     <xi:include href="./00-plano.ptx" />
     <xi:include href="./01-esp_lor.ptx" />
-    <!-- <xi:include href="./02-curvas.ptx" /> -->
-    <!-- <xi:include href="./03-sup_quadricas.ptx" /> -->
-    <!-- <xi:include href="./04-func_vv.ptx" /> -->
-    <!-- <xi:include href="./05-func_limites.ptx" /> -->
-    <!-- <xi:include href="./06-derpar.ptx" /> -->
-    <!-- <xi:include href="./07-diff.ptx" /> -->
-    <!-- <xi:include href="./08-cadeiadir.ptx" /> -->
-    <!-- <xi:include href="./09-sup_nivel.ptx" /> -->
-    <!-- <xi:include href="./10-maxmin.ptx" /> -->
-    <!-- <xi:include href="./99-sample_stuff.ptx" /> -->
+    <xi:include href="./02-curvas.ptx" />
+    <!-- <xi:include href="./03-superficies.ptx" /> -->
   </slideshow>
 </pretext>
