@@ -80,8 +80,8 @@
     </ul></p>
     <p pause="yes">O tipo causal de uma reta é o tipo causal de qualquer
     vetor diretor.</p>
-    <p pause="yes">O tipo causal de um plano <m>\pi:ax+by+cz=d</m> em <m>\L^3</m>
-    de equação é dado pelo tipo causal do seu vetor (euclidianamente)
+    <p pause="yes">O tipo causal de um plano <m>\pi:ax+by+cz=d</m> em
+    <m>\L^3</m> é dado pelo tipo causal do seu vetor (euclidianamente)
     normal <m>\mathbf{n}=(a,b,c)</m>:
     <ul pause="yes">
       <li><m>\pi</m> é de tipo espaço se e somente se <m>\mathbf{n}</m>
@@ -290,10 +290,10 @@
     (<m>O_1^\uparrow(n,\R)</m>) é um grupo.</p>
     <p pause="yes"><m>\Lambda\in O_1^\uparrow(n,\R)\iff \lambda_{nn}\geq
     1</m>.</p>
-    <p pause="yes">Podemos decompor <m>L^n=\R^{n-1}\oplus\R_-</m> e considerar as
-    restrições de <m>\Lambda</m>, <m>\Lambda_E</m> e <m>\Lambda_T</m>,
-    aos respectivos somandos. Dessa forma temos que
-    <m>\det\Lambda_E=\det\Lambda\det\Lambda_T</m> e a seguinte partico
+    <p pause="yes">Podemos decompor <m>L^n=\R^{n-1}\oplus\R_-</m> e
+    considerar as restrições de <m>\Lambda</m>, <m>\Lambda_E</m> e
+    <m>\Lambda_T</m>, aos respectivos somandos. Mostra-se que
+    <m>\det\Lambda_E=\det\Lambda\det\Lambda_T</m> e a seguinte particão
     de <m>O_1(n,\R)</m>:
     <md>
       <mrow>O_1^{+\uparrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
@@ -320,8 +320,8 @@
     1</m>.</p>
     <p>Podemos decompor <m>L^n=\R^{n-1}\oplus\R_-</m> e considerar as
     restrições de <m>\Lambda</m>, <m>\Lambda_E</m> e <m>\Lambda_T</m>,
-    aos respectivos somandos. Dessa forma temos que
-    <m>\det\Lambda_E=\det\Lambda\det\Lambda_T</m> e a seguinte partico
+    aos respectivos somandos. Mostra-se que
+    <m>\det\Lambda_E=\det\Lambda\det\Lambda_T</m> e a seguinte partição
     de <m>O_1(n,\R)</m>:
     <md>
       <mrow>O_1^{+\uparrow}&amp;=\{\Lambda\in O_1(n,\R)\colon
@@ -342,5 +342,50 @@
 
   <slide>
     <title>Produto Vetorial</title>
+
+    <p>Dados <m>\mathbf{v_1},\ldots,\mathbf{v_{n-1}}\in\L^n</m>, o
+    <term>produto vetorial</term> (com respeito ao "produto escalar"
+    fixado) deles é o (único) vetor
+    <m>\mathbf{v_1}\wedge\ldots\wedge\mathbf{v_n}=\mathbf{v}\in\L^n</m>
+    tal que
+    <me>\langle\mathbf{v},\mathbf{x}\rangle=\det(\mathbf{x},\mathbf{v_1},\ldots,\mathbf{v_{n-1}}),
+    \text{ para todo }\mathbf{x}\in\L^n.</me></p>
+    <p pause="yes">Em particular, se <m>n=3</m>, temos que
+    <m>\mathbf{u}\wedge\mathbf{v}=\det
+    \begin{pmatrix}
+    \mathbf{e_1}&amp;\mathbf{e_2}&amp;-\mathbf{e_3}\\
+    u_1&amp;u_2&amp;u_3\\
+    v_1&amp;v_2&amp;v_3
+    \end{pmatrix}</m>.</p>
+    <p pause="yes">Tem quase todas as propriedades do produto vetorial
+    usual... O que muda?</p>
+    <p pause="yes">Identidade de Lagrange:
+    <m>\langle\mathbf{u}\wedge\mathbf{v},\mathbf{u}\wedge\mathbf{v}\rangle=-\langle\mathbf{u},\mathbf{u}\rangle\langle\mathbf{v},\mathbf{v}\rangle+\langle\mathbf{u},\mathbf{v}\rangle^2</m>.</p>
+    <p pause="yes">Orientação de bases: em <m>\R^3</m>, se
+    <m>\{\mathbf{u},\mathbf{v}\}</m> é L.I., então
+    <m>\{\mathbf{u},\mathbf{v},\mathbf{u}\wedge\mathbf{v}\}</m> é base
+    positiva. Isso vem do fato que
+    <m>\det(\mathbf{u},\mathbf{v},\mathbf{u}\wedge\mathbf{v})&gt;0</m>.</p>
+    <p pause="yes">Em <m>\L^n</m>: se
+    <m>\{\mathbf{v_1},\ldots,\mathbf{v_{n-1}}\}</m> são L.I. e não geram
+    um subespaço de tipo luz, então, para
+    <m>\mathbf{v}=\mathbf{v_1}\wedge\ldots\wedge\mathbf{v_{n-1}}</m>, o
+    conjunto <m>C=\{\mathbf{v_1},\ldots,\mathbf{v_{n-1}},\mathbf{v}\}</m> é
+    uma base de <m>\L^n</m>.</p>
+    <p pause="yes">Logo,
+    <m>\det(\mathbf{v_1},\ldots,\mathbf{v_{n-1}},\mathbf{v})=
+    (-1)^{n-1}\det(\mathbf{v},\mathbf{v_1},\ldots,\mathbf{v_{n-1}})=(-1)^{n-1}\langle\mathbf{v},\mathbf{v}\rangle</m>,
+    ou seja a orientação de <m>C</m> depende da dimensão do espaço e o
+    tipo causal de <m>\mathbf{v}</m>.</p>
+  </slide>
+  <slide>
+    <title>Traço e Determinante Métricos</title>
+    <p pause="yes">Se <m>Z</m> é um espaço vetorial qualquer e
+    <m>\{\mathbf{v_1},\ldots,\mathbf{v_n}\}</m> é uma base ortonormal de
+    <m>\L^n</m> e <m>B\colon\L^n\times\L^n\to Z</m> é bilinear, então
+    <me>\tr_{\langle\cdot,\cdot\rangle}B=\sum_{i=1}^n\epsilon_\mathbf{v_i}B(\mathbf{v_i},\mathbf{v_i})\quad\text{e}\quad\det\mbox{}_{\langle\cdot,\cdot\rangle}B=\det\big(B(\mathbf{v_i},\mathbf{v_j})\big),</me>
+    onde <m>\epsilon_i=\langle\mathbf{v_i},\mathbf{v_i}\rangle</m>, são
+    chamados o traço e o determinante de <m>B</m> relativos à "métrica"
+    <m>\langle\cdot,\cdot\rangle</m>.</p>
   </slide>
 </section>
