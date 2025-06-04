@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="curvas">
+  
+  <title>Curvas espaço de Lorentz-Minkowski</title>    
+
+  <slide>
+    <title>Primeiras definições e resultados</title>
+    <p>Uma curva em <m>\L^n</m> é uma aplicação suave <m>\alpha\colon
+    I\subseteq\R\to\L^n</m>.</p>
+    <p pause="yes">O tipo causal de uma curva em <m>t_0</m> é o tipo
+    causal de <m>\alpha'(t_0)</m> (ser de tipo espaço ou tempo é uma
+    propriedade aberta).</p>
+    <p pause="yes">Indicador de <m>\alpha</m>:
+    <m>\epsilon_\alpha:=1</m>, se é de tipo espaço,
+    <m>\epsilon_\alpha:=-1</m>, se é de tipo tempo.</p>
+    <p pause="yes"><m>\alpha</m> é <term>regular</term> em <m>t_0</m> se
+    <m>\alpha'(t_0)\neq\mathbf{0}</m>. Toda curva de tipo tempo ou luz é
+    regular.</p>
+    <p pause="yes">Não existem curvas fechadas de tipo tempo ou luz.</p>
+    <p pause="yes">Toda curva de tipo tempo ou espaço pode ser
+    reparametrizada por comprimento de arco.</p>
+    <p pause="yes">E de tipo luz?</p>
+    <p pause="yes">Arco-fóton: se <m>\alpha</m> é de tipo luz e
+    <m>|\alpha''|\neq 0</m>, podemos reparamentrizar com aceleração
+    unitária.</p>  
+  </slide>
+</section>
