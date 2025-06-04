@@ -36,7 +36,7 @@
     <definition xml:id="def_esplor" >
       <statement>
 	<p>O espaço de Lorentz-Minkowski é o espaço vetorial <m>\R^n</m>
-	mundo da forma bilinear acima. Notação:
+	munido da forma bilinear acima. Notação:
 	<m>\L^n=\R^n_1=\Big(\R^n,\langle\cdot,\cdot\rangle_1\Big)</m>.</p>
       </statement>
     </definition>
@@ -380,7 +380,7 @@
   </slide>
   <slide>
     <title>Traço e Determinante Métricos</title>
-    <p pause="yes">Se <m>Z</m> é um espaço vetorial qualquer e
+    <p>Se <m>Z</m> é um espaço vetorial qualquer e
     <m>\{\mathbf{v_1},\ldots,\mathbf{v_n}\}</m> é uma base ortonormal de
     <m>\L^n</m> e <m>B\colon\L^n\times\L^n\to Z</m> é bilinear, então
     <me>\tr_{\langle\cdot,\cdot\rangle}B=\sum_{i=1}^n\epsilon_\mathbf{v_i}B(\mathbf{v_i},\mathbf{v_i})\quad\text{e}\quad\det\mbox{}_{\langle\cdot,\cdot\rangle}B=\det\big(B(\mathbf{v_i},\mathbf{v_j})\big),</me>
