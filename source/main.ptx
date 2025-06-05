@@ -68,6 +68,6 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <xi:include href="./00-plano.ptx" />
     <xi:include href="./01-esp_lor.ptx" />
     <xi:include href="./02-curvas.ptx" />
-    <!-- <xi:include href="./03-superficies.ptx" /> -->
+    <xi:include href="./03-superficies.ptx" />
   </slideshow>
 </pretext>
