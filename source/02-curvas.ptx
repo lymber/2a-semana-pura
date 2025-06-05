@@ -2,10 +2,10 @@
 
 <section xml:id="curvas">
   
-  <title>Curvas espaço de Lorentz-Minkowski</title>    
+  <title>Curvas no espaço de Lorentz-Minkowski</title>    
 
   <slide>
-    <title>Primeiras definições e resultados</title>
+    <title>Curvas, tipo causal e fatos básicos</title>
     <p>Uma curva em <m>\L^n</m> é uma aplicação suave <m>\alpha\colon
     I\subseteq\R\to\L^n</m>.</p>
     <p pause="yes">O tipo causal de uma curva em <m>t_0</m> é o tipo
@@ -23,6 +23,151 @@
     <p pause="yes">E de tipo luz?</p>
     <p pause="yes">Arco-fóton: se <m>\alpha</m> é de tipo luz e
     <m>|\alpha''|\neq 0</m>, podemos reparamentrizar com aceleração
-    unitária.</p>  
+    unitária.</p>
+    <p pause="yes">Vamos tratar primeiro de curvas, chamadas
+    admissíveis, tais que <m>\big\{\alpha'(t),\alpha''(t)\big\}</m> é
+    L.I. (bi-regular) e os espaços gerados por <m>\alpha'(t)</m> e
+    <m>\big\{\alpha'(t),\alpha''(t)\big\}</m> não são de tipo luz.</p>
+  </slide>
+  <slide>
+    <title>Triedro de Frente-Serret para curvas admissíveis</title>
+    <p><term> Triedro de Frenet-Serret</term>: é base ortonormal
+    positiva (adaptada à curva, suposta unitária), <m>\big(T_\alpha
+    ,N_\alpha,B_\alpha\big)</m> dada por: <m>T_\alpha=\alpha'</m>;
+    <m>T'_\alpha=\kappa_\alpha N_\alpha</m>;
+    <m>B_\alpha=(-1)\epsilon_\alpha\eta_\alpha T_\alpha\wedge
+    N_\alpha</m>, onde <m>\eta_\alpha</m> é o indicador de
+    <m>N_\alpha</m>.</p>
+  </slide>
+  <slide>
+    <title>Triedro de Frente-Serret para curvas admissíveis</title>
+    <p><term> Triedro de Frenet-Serret</term>: é base
+    ortonormal positiva (adaptada à curva, suposta unitária),
+    <m>\big(T_\alpha ,N_\alpha,B_\alpha\big)</m> dada por:
+    <m>T_\alpha=\alpha'</m>; <m>T'_\alpha=\kappa_\alpha N_\alpha</m>;
+    <m>B_\alpha=(-1)\epsilon_\alpha\eta_\alpha T_\alpha\wedge
+    N_\alpha</m>, onde <m>\eta_\alpha</m> é o indicador de
+    <m>N_\alpha</m>.</p>
+    <p>As derivadas desses vetores ajudam a entender um pouco
+    (totalmente) o comportamento da curva.</p>
+    <p>
+      <definition xml:id="def_curvatura-torcao">
+	<statement><p>O número <m>\kappa_\alpha(s)=|T'_\alpha(s)|</m> é
+	a <term>curvatura de <m>\alpha</m></term> em <m>s\in I</m>.</p>
+	<p>O número <m>\tau_\alpha(s)=(-1)\epsilon_\alpha\langle
+	N'_\alpha(s),B_\alpha(s)\rangle</m> é a <term>torção de
+	<m>\alpha</m></term> em <m>s\in I</m>.</p>
+	</statement>
+    </definition></p>
+    <p pause="yes">Verifica-se a seguinte relação
+    <m>\begin{pmatrix}
+      T'_\alpha\\N'_\alpha\\B'_\alpha
+    \end{pmatrix}=
+    \begin{pmatrix}
+      0&amp;\kappa_\alpha&amp;0\\
+      -\epsilon_\alpha\eta_\alpha\kappa_\alpha&amp;0&amp;\tau_\alpha\\
+      0&amp;\epsilon_\alpha\tau_\alpha&amp;0
+    \end{pmatrix}
+    \begin{pmatrix}
+      T_\alpha\\N_\alpha\\B_\alpha
+    \end{pmatrix}</m></p>
+  </slide>
+  
+  <slide>
+    <title>Triedro de Frente-Serret para curvas admissíveis</title>
+    <p>O que <m>\kappa_\alpha</m> e <m>\tau_\alpha</m> contam sobre a
+    curva?</p>
+    <p pause="yes"><m>\tau_\alpha\equiv 0\iff\alpha</m> está contida num
+    plano (falso se a curva não é admissível).</p>
+    <p pause="yes"><m>\kappa_\alpha</m> constante e <m>\tau_\alpha\equiv
+    0\iff\alpha</m> é plana e está contida num pedaço de hipérbole.</p>
+    <p pause="yes"><term>Teorema de Lancret</term>: uma curva é uma
+    hélice se e só se <m>\tau_\alpha/\kappa_\alpha</m> é constante.</p>
+    <p pause="yes"><term>Teorema Fundamental das curvas</term>:
+    curvatura e torção determinam a curva , a menos de isometria de
+    <m>\L^3</m>.</p>
+  </slide>
+
+  <slide>
+    <title>Curvas com plano osculador degenerado</title>
+    <p>Plano osculador de uma curva bi-regular é o plano gerado por
+    <m>\{\alpha',\alpha''\}</m>. Vamos assumir que a curva é unitária ou
+    parametrizada por arco-fóton.</p>
+    <p pause="yes">Uma curva unitária é de tipo <term>semi-luz</term> se seu
+    plano osculador é degenerado (<m>\alpha''</m> é de tipo luz).</p>
+    <p pause="yes">Para curvas de tipo luz ou semi-luz, definimos
+    <m>T_\alpha=\alpha'</m> e <m>N_\alpha=\alpha''</m>.</p>
+    <p pause="yes">Para definir <m>B_\alpha</m> o produto vetorial não resolve.</p>
+    <p pause="yes">Qual deles? O Euclidiano dá conta!</p>
+    <p pause="yes">Se <m>(T_\alpha,N_\alpha)</m> é base positiva do
+    plano osculador, então 
+    <m>B_\alpha=\lambda T_\alpha\wedge_E N_\alpha</m> é de tipo luz e
+    L.I. com <m>T_\alpha</m> e <m>N_\alpha</m>.</p>
+    <p pause="yes">Os valores de <m>\langle T_\alpha,B_\alpha\rangle</m>
+    e <m>\langle N_\alpha,B_\alpha\rangle</m> fecham a questão: um deles
+    deve ser <m>0</m>, para garantir ortogonalidade com o vetor tipo
+    espaço e o outro <m>-1</m>, para garantir não colinearidade com o
+    vetor de tipo luz.</p>
+    <p pause="yes">Pondo <m>\langle T_\alpha,B_\alpha\rangle=-\eta_\alpha</m>
+    e <m>\langle N_\alpha,B_\alpha\rangle=-\epsilon_\alpha</m> fica tudo
+    resolvido, considerando o indicador nulo quando a curva é de tipo
+    luz.</p>
+    <p pause="yes"><m>\xi_\alpha:=-</m> é chamada de
+    <term>pseudo-torção</term> (ou curvatura de Cartan) de <m>\alpha</m>.</p>
+  </slide>
+
+  <slide>
+    <title>Curvas com plano osculador degenerado</title>
+    <p>Para uma curva de tipo luz ou semi luz, temos a relação
+    <m>\begin{pmatrix}
+     T'_\alpha\\N'_\alpha\\B'_\alpha
+     \end{pmatrix}=
+     \begin{pmatrix}
+     0&amp;1&amp;0\\
+     \eta_\alpha\xi_\alpha&amp;\epsilon_\alpha\xi_\alpha&amp;\eta_\alpha\\
+     \epsilon_\alpha&amp;\eta_\alpha\xi_\alpha&amp;-\epsilon_\alpha\xi_\alpha
+     \end{pmatrix}
+     \begin{pmatrix}
+       T_\alpha\\N_\alpha\\B_\alpha
+     \end{pmatrix}</m>
+    </p>
+    <p pause="yes">Uma curva unitária é de tipo <term>semi-luz</term> se seu
+    plano osculador é degenerado (<m>\alpha''</m> é de tipo luz).</p>
+    <p pause="yes">Para curvas de tipo luz ou semi-luz, definimos
+    <m>T_\alpha=\alpha'</m> e <m>N_\alpha=\alpha''</m>.</p>
+    <p pause="yes">Para definir <m>B_\alpha</m> o produto vetorial não resolve.</p>
+    <p pause="yes">Qual deles? O Euclidiano dá conta!</p>
+    <p pause="yes">Se <m>(T_\alpha,N_\alpha)</m> é base positiva do
+    plano osculador, então 
+    <m>B_\alpha=\lambda T_\alpha\wedge_E N_\alpha</m> é de tipo luz e
+    L.I. com <m>T_\alpha</m> e <m>N_\alpha</m>.</p>
+    <p pause="yes">Os valores de <m>\langle T_\alpha,B_\alpha\rangle</m>
+    e <m>\langle N_\alpha,B_\alpha\rangle</m> fecham a questão: um deles
+    deve ser <m>0</m>, para garantir ortogonalidade com o vetor tipo
+    espaço e o outro <m>-1</m>, para garantir não colinearidade com o
+    vetor de tipo luz.</p>
+    <p pause="yes">Pondo <m>\langle T_\alpha,B_\alpha\rangle=-\eta_\alpha</m>
+    e <m>\langle N_\alpha,B_\alpha\rangle=-\epsilon_\alpha</m> fica tudo
+    resolvido, considerando o indicador nulo quando a curva é de tipo
+    luz.</p>
+    <p pause="yes"><m>\xi_\alpha:=-</m> é chamada de
+    <term>pseudo-torção</term> (ou curvatura de Cartan) de
+    <m>\alpha</m>.</p>
+  </slide>
+  <slide>
+    <title>Consequências:</title>
+    <p>
+      <ul pause="yes">
+	<li>toda curva plana de tipo luz é uma reta;</li>
+	<li>toda curva semi-luz plana está contida num plano de tipo
+	luz;</li>
+	<li><term>Lancret (versão luz):</term> uma curva de tipo luz é uma hélice se e
+	somente se <m>\xi_\alpha</m> é constante;</li>
+	<li><term>Teorema Fundamental (versão luz):</term> a menos de
+	isometria de <m>\L^3</m>, a pseudo torção determina duas curvas, uma de
+	tipo luz e outra de tipo semi-luz.</li>
+      </ul>
+    </p>
   </slide>
 </section>
+  
