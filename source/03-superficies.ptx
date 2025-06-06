@@ -5,20 +5,179 @@
   <title>Superfícies no espaço de Lorentz-Minkowski</title>    
 
   <slide>
-    <title>Superfícies: definição e tipo causal e Primeira Forma Fundamental</title>
+    <title>Superfícies: definição e tipo causal e Primeira Forma
+    Fundamental</title>
+    <p>A definição de superfície foi apresentada no final da seção
+    anterior.</p>
+    <p pause="yes">O tipo causal de uma superfície num ponto é o tipo
+    causal do seu plano tangente em <m>p</m>, <m>T_pM</m>.</p>
+    <p pause="yes">Se <m>M</m> é de tipo espaço ou luz (tempo) em <m>p\in M</m> então é
+    localmente um gráfico sobre o plano <m>z=0</m> (<m>x=0</m> ou
+    <m>y=0</m>).</p>
+    <p pause="yes">Não existe superfície compacta de tipo causal constante em
+    <m>\L^3</m>.</p>
+    <p pause="yes"><term>Primeira Forma Fundamental</term>:
+    <m>I_p\colon T_pM\times T_pM\to\R</m>, dada por
+    <m>I_p(\mathbf{v},\mathbf{w})=\langle\mathbf{v},\mathbf{w}\rangle</m>.
+    <p pause="yes"><term>Isometrias</term>.</p>
+  </p>
   </slide>
   <slide>
     <title>Segunda Forma Fundamental e Curvaturas</title>
+    <p><term>Aplicação de Gauss:</term> <m>N\colon M\to\L^3</m>, tal que
+    <m>N(p)\in T_M^\perp</m> é unitário.</p>
+    <p pause="yes"><term>Indicador de <m>M</m>:</term>
+    <m>\epsilon_M=-\epsilon_N</m>.</p>
+    <p pause="yes"><term>Mapa de Weigarten:</term> <m>-dN_p\colon
+    T_pM\to T_pM</m>, é um operador é auto-adjunto em relação à primeira
+    forma fundamental.</p>
+    <p pause="yes"><term>Segunda Forma Fundamental:</term> <m>I\!I_p\colon
+    T_pM\times T_pM\to (T_pM)^\perp)</m>, dada por
+    <m>\langle I\!I_p(\mathbf{v},\mathbf{w}),N(p)\rangle=\langle
+    -dN_p(\mathbf{v}),\mathbf{w}\rangle</m>, ou seja,
+    <m>I\!I_p(\mathbf{v},\mathbf{w})=-\epsilon_M \langle
+    -dN_p(\mathbf{v}),\mathbf{w}\rangle</m>.</p>
+    <p pause="yes"><term>Curvaturas</term>: se
+    <m>\{\mathbf{v_1},\mathbf{v_2}\}</m> é base ortonormal de
+    <m>T_pM</m>,
+    <ul pause="yes">
+      <li><term>Curvatura
+      Média:</term> <m>\mathbf{H}(p)=\frac{1}{2}\tr_{I_p}(I\!I_p)=\dfrac{\epsilon_{\mathbf{v_1}}I\!I_p(\mathbf{v_1})+\epsilon_{\mathbf{v_2}}I\!I_p(\mathbf{v_2})}{2}</m></li>
+      <li><term>Curvatura Gaussiana:</term> <m>K(p)=-\det_{I_p}(I\!I_p)</m>
+      (componentes escalares na direção de <m>N_p</m>).</li>
+    </ul>
+    </p>
+    <p pause="yes">Em <m>\R^3</m>, <m>-dN_p</m> é sempre diagonalizável,
+    em <m>\L^3</m> não.</p>
+    <p pause="yes"><term>Critério para diagonalização de
+    <m>-dN_p</m>:</term> <m>H^2(p)-\epsilon_MK(p)&gt;0</m> ou
+    <m>H^2(p)-\epsilon_MK(p)=0</m>, se <m>M</m> é de tipo espaço.</p>
+    <p pause="yes">Nesse caso, temos autovetores <m>\kappa_1(p)</m> e
+    <m>\kappa_2(p)</m>, chamadas <term>curvaturas principais</term> de
+    <m>M</m> em <m>p</m> (são o máximo e mínimo das curvaturas normais -
+    mesmo que não há razão óbvia para existirem).</p>
+    <p pause="yes">Sob essas condições,
+    <m>H(p)=\epsilon_M\dfrac{\kappa_1(p)+\kappa_2(p)}{2}</m> e <m>K(p)=\epsilon_M\kappa_1(p)\kappa_2(p)</m>.</p>
   </slide>
   <slide>
-    <title>Superfícies Críticas e Para-complexos?</title>
+    <title>Superfícies Críticas</title>
+    <p>Se <m>U\in\R^2</m> é um aberto e <m>x\colon U\to\R^3_\nu</m> uma
+    parametrização, então uma <term>variação</term> de <m>x</m> é</p>
+    <p><m>x^t=x+tV</m>, com <m>V</m> um campo de vetores suave que se
+    anula em <m>\partial U</m>.</p>
+    <p pause="yes">A área dessa variação é dada por <m>A(t)=\displaystyle{\int_U
+    |x_u^t\wedge x_v^t|\,dudv}</m>.</p>
+    <p pause="yes"><term>Primeira Variação da Área:</term>
+    <m>A'(0)=0\iff \mathbf{H}\equiv\mathbf{0}</m>.</p>
+    <p pause="yes">Olhando para a segunda variação, justificam-se os
+    adjetivos para <m>M</m> :</p>
+    <ul pause="yes">
+      <li>mínima, se está em <m>\R^3</m> ou é de tipo tempo em
+      <m>\L^3</m>;</li>
+      <li>máxima se está em <m>\L^3</m> e é de tipo espaço.</li>
+    </ul>
+    <p pause="yes"><term>Calabi-Bernstein</term>: Se uma superfície em
+    <m>\L^3</m> crítica de tipo espaço é o gráfico de uma função suave,
+    definida em todo o plano, então essa função é afim.</p>
+    <p pause="yes">Superfícies Mínimas em <m>\R^3\longleftrightarrow</m>
+    números complexos e funções holomorfas.</p> 
+    <p pause="yes">Superfícies Mínimas em <m>\L^3\longleftrightarrow</m>
+    <term>números para-complexos</term> e funções
+    <term>para-holomorfas</term>.</p>
+    <p>Se <m>x</m> é parametrização isotérmica de <m>M</m>, então
+    <m>\triangle x=2\lambda^2\mathbf{H}</m> (tipo espaço) e <m>\square
+    x=2\lambda^2\epsilon_u\mathbf{H}</m>.</p>
+  </slide>
+  <slide>
+    <title>Curvas em uma Superfície e outros objetos</title>
+    <p><term>Geodésicas</term>: aceleração tangencial nula ou pontos
+    críticos do funcional energia</p>
+    <p pause="yes"><term>Símbolos de Christoffel</term>: coeficientes
+    das segundas derivadas da parametrização ou coeficientes da equação
+    diferencial das geodésicas.</p>
+    <p pause="yes"><term>Equações de Compatibilidade (Gauss -
+    Codazzi)</term>.</p>
+    <p pause="yes"><term>Teorema Egregium:</term> Se duas superfícies
+    são isométricas então elas têm a mesma curvatura Gaussiana em pontos
+    correspondentes.</p>
+    <p pause="yes"><term>Teorema de Bonnet:</term> um tipo de recíproca
+    para as equações acima.</p>
   </slide>
   <slide>
     <title>Superfícies Abstratas</title>
+    <p><term>Métrica Pseudo-Riemanniana</term>.</p>
+    <p pause="yes">Exemplo: <m>M=\R^2</m>, <m>ds^2=-dx^2+ydy^2</m>,
+    <m>\mathbf{v}_p=(1,1)</m>. Como fica
+    <m>\langle\mathbf{v},\mathbf{v}\rangle_p</m>, quando <m>p=(0,2)</m>,
+    <m>p=(1,1)</m> <m>p=(-2,1/2)</m>?</p>
+    <p pause="yes">Os símbolos de Christoffel agora são definimos em
+    termos dos coeficientes da métrica expressos numa dada
+    parametrização local da superfície:
+    <m>\Gamma_{ij}^k=\sum\limits_{r=1}^2\dfrac{1}{2}g^{kr}\left(\dfrac{\partial
+    g_{ir}}{\partial u^j}+\dfrac{\partial
+    g_{jr}}{\partial u^i}-\dfrac{\partial
+    g_{ij}}{\partial u^r}\right)</m>.</p>
+    <p pause="yes">Recuperamos as equações diferenciais das
+    geodésicas.</p>
+    <p pause="yes">E também uma expressão para a curvatura Gaussiana
+    (que não dependende de nada além da métrica!).</p>
+    <p pause="yes">Se, por exemplo, <m>g_{12}=0</m>, temos:
+    <m>K(p)=\dfrac{-1}{\sqrt{|g_{11}g_{22}|}}\left(\epsilon_u\left(\frac{\big(\sqrt{|g_{22}|}\big)_u}{\sqrt{|g_{11}|}}\right)_u+\epsilon_v\left(\dfrac{\big(\sqrt{|g_{11}|}\big)_v}{\sqrt{|g_{22}|}}\right)_v\right)</m>.</p>
+    <p pause="yes">Exemplo: <m>M=\R^2_{y&gt;0}</m> e
+    <m>ds^2=\dfrac{dx^2+dy^2}{y^2}\implies K=-1</m>.</p>
   </slide>
   
   <slide>
     <title>Completude e Causalidade</title>
+    <p><m>M</m> é <term>geodesicamente completa</term> se o domínio
+    maximal de toda geodésica é <m>\R</m>.</p>
+    <p pause="yes"><term>Distância em <m>M</m>:</term> <m>d(p,q)</m> é o ínfimo
+    dos comprimentos de todas as curvas (suaves por partes) que conectam <m>p</m> a
+    <m>q</m>. Assim, <m>(M,d)</m> é um espaço métrico.</p>
+    <p pause="yes">No caso de uma métrica positiva-definida
+    (Riemanniano), a completude de <m>(M,d)</m> equivale a <m>M</m> ser
+    geodesicamente completa (Hopf-Rinow).</p>
+    <p pause="yes">No caso Lorentziano, uma variedade é <term>temporalmente
+    orientável</term> se existe um campo de vetores de tipo tempo suave
+    que nunca se anula (também chamada de <term>espaço-tempo</term>).</p>
+  </slide>
+  <slide>
+    <title>Completude e Causalidade</title>
+    <p><m>M</m> é <term>geodesicamente completa</term> se o domínio
+    maximal de toda geodésica é <m>\R</m>.</p>
+    <p><term>Distância em <m>M</m>:</term> <m>d(p,q)</m> é o ínfimo
+    dos comprimentos de todas as curvas (suaves por partes) que conectam <m>p</m> a
+    <m>q</m>. Assim, <m>(M,d)</m> é um espaço métrico.</p>
+    <p>No caso de uma métrica positiva-definida
+    (Riemanniano), a completude de <m>(M,d)</m> equivale a <m>M</m> ser
+    geodesicamente completa (Hopf-Rinow).</p>
+    <p>No caso Lorentziano, uma variedade é <term>temporalmente
+    orientável</term> se existe um campo de vetores de tipo tempo suave
+    que nunca se anula (também chamada de <term>espaço-tempo</term>).</p>
+    <p><theorem xml:id="teo-lor_orint">
+      <statement>
+	<p>Se <m>M</m> é uma variedade diferenciável conexa, são
+	equivalentes:</p>
+	<p><ol marker="(i)">
+	  <li>a existência de uma métrica Lorentziana para
+	  <m>M</m>;</li>
+	  <li>a existência de uma métrica Lorentziana temporalmente
+	  orientável para
+	  <m>M</m>;</li>
+	  <li>a existência de um campo de vetores que nunca se anula em
+	  <m>M</m>;</li>
+	  <li>ou <m>M</m> é não-compacta, ou <m>\chi(M)=0</m>.</li>
+	</ol>
+      </p></statement>
+    </theorem></p>
+    <p pause="yes">Se <m>M</m> é um espaço-tempo compacto, existem
+    curvas de tipo tempo fechadas e futuro dirigidas.</p>
+  </slide>
+  <slide>
+    <title>Obrigado!</title>
+    <p pause="yes">"Der Anfang ist das Ende. Und das Ende ist der Anfang. Alles ist
+    miteinander verbunden. Zukunft, Vergangenheit und Gegenwart." -
+    Noah, Dark - T.2; E.8 </p>
   </slide>
 </section>
   
