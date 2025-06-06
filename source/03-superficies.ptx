@@ -84,7 +84,7 @@
     <p pause="yes">Superfícies Mínimas em <m>\L^3\longleftrightarrow</m>
     <term>números para-complexos</term> e funções
     <term>para-holomorfas</term>.</p>
-    <p>Se <m>x</m> é parametrização isotérmica de <m>M</m>, então
+    <p pause="yes">Se <m>x</m> é parametrização isotérmica de <m>M</m>, então
     <m>\triangle x=2\lambda^2\mathbf{H}</m> (tipo espaço) e <m>\square
     x=2\lambda^2\epsilon_u\mathbf{H}</m>.</p>
   </slide>
@@ -110,7 +110,7 @@
     <m>\mathbf{v}_p=(1,1)</m>. Como fica
     <m>\langle\mathbf{v},\mathbf{v}\rangle_p</m>, quando <m>p=(0,2)</m>,
     <m>p=(1,1)</m> <m>p=(-2,1/2)</m>?</p>
-    <p pause="yes">Os símbolos de Christoffel agora são definimos em
+    <p pause="yes">Os símbolos de Christoffel agora são definidos em
     termos dos coeficientes da métrica expressos numa dada
     parametrização local da superfície:
     <m>\Gamma_{ij}^k=\sum\limits_{r=1}^2\dfrac{1}{2}g^{kr}\left(\dfrac{\partial
@@ -131,7 +131,7 @@
     <title>Completude e Causalidade</title>
     <p><m>M</m> é <term>geodesicamente completa</term> se o domínio
     maximal de toda geodésica é <m>\R</m>.</p>
-    <p pause="yes"><term>Distância em <m>M</m>:</term> <m>d(p,q)</m> é o ínfimo
+    <p pause="yes"><term>Distância (Riemanniana) em <m>M</m>:</term> <m>d(p,q)</m> é o ínfimo
     dos comprimentos de todas as curvas (suaves por partes) que conectam <m>p</m> a
     <m>q</m>. Assim, <m>(M,d)</m> é um espaço métrico.</p>
     <p pause="yes">No caso de uma métrica positiva-definida
